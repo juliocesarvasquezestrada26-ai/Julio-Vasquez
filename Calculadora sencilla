@@ -1,0 +1,36 @@
+# Calculadora sencilla
+while True:
+    try:
+        print("--- MI PRIMERA CALCULADORA---")
+        nume1 = float(input("Ingrese un numero: "))
+        operacion = input("Que operacion desea: (+, -, *, /) o 'salir': ").lower()
+        nume2 = float(input("Ingresa un numero: "))
+        if operacion == "salir":
+            break
+        if operacion == "+" or operacion == "suma":
+            operacion = (nume1+nume2)
+            print(f"El resultado es: {operacion}")
+
+        elif operacion == "-" or operacion == "resta":
+            operacion = (nume1-nume2)
+            print(f"El resultado es: {operacion}")
+
+        elif operacion == "*" or operacion == "multiplicacion" or operacion == "multi":
+            operacion = (nume1*nume2)
+            print(f"El resultado es: {operacion}")
+
+        elif operacion =="/" or operacion=="division" or operacion== "div":
+            if nume2 !=0:
+                print(f"El resultado es: {nume1 / nume2}")
+            else:
+                print("No se puede dividir por cero.")
+        else:
+            print("Operacion no valida")
+        opcion = input("¿Desea hacer otra cuenta? (si/no):").lower()
+        if opcion == "no":
+            print("Cerrando sistema...")
+            break
+
+    except ValueError:
+        print("Error!!")   
+
