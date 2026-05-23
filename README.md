@@ -14,5 +14,5 @@
 ### 📈 Mis Proyectos
 - 🧮 **Calculadora Pro:** Un sistema con manejo de errores, bucles y memoria.
 - 🕺 **Sistema Discoteca:** Lógica de condicionales anidados.
-- ** Sistema de banco + Cajero**
+-  Sistema de banco + Cajero
   
