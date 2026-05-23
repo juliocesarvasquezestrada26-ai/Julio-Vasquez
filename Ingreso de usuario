@@ -1,0 +1,20 @@
+usuario_correcto = "admin"
+contraseña_correcta =  "jcve"
+
+
+intentos = 3
+
+
+while intentos >0:
+    usuario = input("Ingrese su usuario: ")
+    contraseña = input("Ingrese su contraseña: ")
+    if usuario == usuario_correcto and contraseña == contraseña_correcta:
+        print("Acceso concedido")
+        break
+    else:
+        intentos = intentos - 1
+        print("Acceso denegado")
+        print("Te quedad", intentos, "Intentos")
+        
+if intentos == 0:
+    print("Cuenta bloqueada. Has agotado los intentos.") 
